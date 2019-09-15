@@ -7,6 +7,16 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
+const cors = require('cors')
+
+var corsOptions = {
+  origin: 'http://localhost:8000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
+}
+
+app.use(cors(corsOptions))
+
+
 
 // List of cats
 app.get("/api/cats", function(req,res){

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 const cors = require('cors')
 
 var corsOptions = {
-  origin: 'http://localhost:8000',
+  origin: 'http://localhost:4200',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
 }
 

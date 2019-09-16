@@ -6,7 +6,7 @@ export interface Cat {
   name: string
 }
 
-@Injectable()
+@Injectable({providedIn : 'root'})
 export class CatService {
   constructor(private http: HttpClient) {}
 
